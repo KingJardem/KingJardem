@@ -18,7 +18,7 @@ function addProduct(e) {
     const stock = document.getElementById('productStock').value;
 
     // Verificação se os campos não estão vazios e se o preço e a quantidade são válidos
-    if (!name || isNaN(price) || isNaN(stock) || price < 0 || stock < 0) {
+    if (!name || isNaN(price) || isNaN(stock) || price <= 0 || stock <= 0) {
         alert("Por favor, preencha todos os campos corretamente.");
         return;
     }
